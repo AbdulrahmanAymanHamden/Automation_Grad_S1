@@ -23,6 +23,7 @@ public class DriverFactory {
                     chromeOptions.addArguments("--headless");
                 }
                 driver = new ChromeDriver(chromeOptions);
+                System.out.println("Chrome browser launched successfully.");
                 break;
 
             case "edge":
@@ -32,6 +33,7 @@ public class DriverFactory {
                     edgeOptions.addArguments("--headless");
                 }
                 driver = new EdgeDriver(edgeOptions);
+                System.out.println("Edge browser launched successfully.");
                 break;
 
             case "firefox":
@@ -41,6 +43,7 @@ public class DriverFactory {
                     firefoxOptions.addArguments("--headless");
                 }
                 driver = new FirefoxDriver(firefoxOptions);
+                System.out.println("Firefox browser launched successfully.");
                 break;
 
             default:

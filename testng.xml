@@ -1,7 +1,8 @@
-<!--<suite name="Suite1" verbose="1">-->
-<!--    <test name="Regression1">-->
-<!--        <classes>-->
-<!--            <class name="LoginTest"/>-->
-<!--        </classes>-->
-<!--    </test>-->
-<!--</suite>-->
+<suite name="Suite1" verbose="1">
+    <test name="Regression1">
+        <classes>
+            <class name="Tests.LoginTest"/>
+            <class name="Tests.RegisterTest"/>
+        </classes>
+    </test>
+</suite>

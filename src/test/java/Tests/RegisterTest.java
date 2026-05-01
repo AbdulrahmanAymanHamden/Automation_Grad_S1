@@ -5,14 +5,14 @@ import Pages.SignUp;
 import jdk.jfr.Description;
 import org.testng.annotations.Test;
 
-public class LoginTest extends BaseTest{
+public class RegisterTest extends BaseTest{
 
     HomePage homePage ;
     SignUp signUp ;
 
-    @Test(priority = 1 , description = "Verify that user can login successfully with valid credentials")
-    @Description("Verify that user can login successfully with valid credentials")
-    public void loginTest()
+    @Test(priority = 1 , description = "Verify that user can register successfully with valid credentials")
+    @Description("Verify that user can register successfully with valid credentials")
+    public void registerTest()
     {
         homePage = new HomePage(driver);
         signUp = new SignUp(driver);
@@ -23,9 +23,9 @@ public class LoginTest extends BaseTest{
         homePage.assertLoginSuccessfully();
     }
 
-    @Test(priority = 2 , description = "Verify that user cannot login with invalid credentials")
-    @Description("Verify that user can cannot login with invalid credentials")
-    public void invalidLoginTest()
+    @Test(priority = 2 , description = "Verify that user cannot register with invalid credentials")
+    @Description("Verify that user can cannot register with invalid credentials")
+    public void invalidRegisterTest()
     {
         homePage = new HomePage(driver);
         signUp = new SignUp(driver);
