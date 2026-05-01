@@ -21,6 +21,7 @@ public class LoginTest extends BaseTest{
         homePage.clickSignupLogin();
         signUp.login("abdo.ayman.ha@gmail.com" , "123456");
         homePage.assertLoginSuccessfully();
+        System.out.println("TESTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTTT!");
     }
 
     @Test(priority = 2 , description = "Verify that user cannot login with invalid credentials")
